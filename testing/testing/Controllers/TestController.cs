@@ -11,6 +11,7 @@ namespace testing.Controllers
     [RoutePrefix("hi")]
     public class TestController : ApiController
     {
+        // creating  list in sublist
         [Route("hello")]
         [HttpPost]
         public output testfunction(input j)
@@ -25,7 +26,6 @@ namespace testing.Controllers
                 temp.p2 = "Abc";
                 List<SampleData> sampleList = new List<SampleData>();
                 sampleList.Add(new SampleData { p1p1=123, p1p2= "AbC" });
-               // sampleList.Add(new SampleData {});
                 sampleList.Add(new SampleData { p1p1 =123, p1p2 ="xyz" });
                 temp.p3 = sampleList;
                }
